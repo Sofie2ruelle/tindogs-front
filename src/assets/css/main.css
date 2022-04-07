@@ -1500,17 +1500,22 @@ input, select, textarea {
 	table {
 		width: 100%;
 	}
+		table thead {
 
+		}
 		table tr {
 			border-top: solid 1px #dddddd;
 		}
 
-			table tr:first-child {
-				border-top: 0;
-			}
+
 
 		table td {
 			padding: 0.5em 1em 0.5em 1em;
+			text-align: left;
+			border-bottom: solid 1px #dddddd;
+			border-left: solid 1px #dddddd;
+			border-right: solid 1px #dddddd;
+
 		}
 
 		table th {
@@ -1520,7 +1525,7 @@ input, select, textarea {
 			margin: 0 0 1em 0;
 		}
 
-		table thead {
+		table thead tr{
 			border-bottom: solid 2px #dddddd;
 		}
 
@@ -2507,6 +2512,7 @@ input, select, textarea {
 					#intro section.first {
 						border-top: 0;
 						padding-top: 0;
+						display: inline-flex;
 					}
 
 					#intro section p {
