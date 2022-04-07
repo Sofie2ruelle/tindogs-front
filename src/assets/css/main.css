@@ -2531,6 +2531,10 @@ input, select, textarea {
 						margin-bottom: 0;
 					}
 
+		section .lacard {
+			display: inline-flex;
+		}
+
 		/* Main */
 
 			#main {

@@ -18,10 +18,10 @@
 			<!-- Header -->
 				<section id="header">
 
-					<!-- Logo -->
+					<!-- Logo DON'T TOUCH -->
 						<h1><a href="index.html">TinDogs</a></h1>
 
-					<!-- Nav -->
+<!-- Nav @click route to HOME and LES RACES -->
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
@@ -29,7 +29,7 @@
 							</ul>
 						</nav>
 
-					<!-- Banner -->
+<!-- Banner  DON'T TOUCH -->
 						<section id="banner">
 							<header>
 								<h2>Welcome sur Toutou Land</h2>
@@ -37,7 +37,7 @@
 							</header>
 						</section>
 
-					<!-- Intro -->
+<!-- La liste    dogsList table-->
 						<section id="intro" class="container">
 							<div class="row">
 								<div class="col-12">
@@ -46,43 +46,42 @@
                                         <h2>La Liste</h2>
                                     </header>
 
-
-
-                                    <table class="latable">
+                                    <table>
                                         <thead>
                                             <tr>
                                                 <th>Photo</th>
                                                 <th>Nom de la race</th>
                                                 <th>Détails</th>
-                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+<!-- V-for for dogsList on tr below-->
                                             <tr>
+                                                <td>Img</td>
                                                 <td>Beauties</td>
-                                                <td> </td>
-                                                <td> </td>
-                                                <td><button>Update</button></td>
+<!-- @click button go to dogCard component for details-->
+                                                <td><button>En savoir plus</button></td>
                                             </tr>
                                         </tbody>
                                     </table>
 
 
 
-
-									<section class="first">
+<!--To create dogCard componnent-->
+									<section class="lacard">
+                                        <header class="major">
+                                            <h2>Détails</h2>
+                                            <div class="container">
+                                        </header>
+<!-- Adapt dynamics infos from here-->
 										<i class="icon solid featured fa-cog theimage"></i>
 										<header>
-											<h2>Ipsum consequat</h2>
+											<h2>Nom de la Race</h2>
 										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-                                        <footer>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button alt">Find out more</a></li>
-                                                <li><a href="#" class="button alt">Find out more</a></li>
-
-                                            </ul>
-                                        </footer>
+										<p>Type de poil</p>
+                                        <p>Gabarit</p>
+                                        <p>Origine</p>
+                                        <p>Caractère</p>
 									</section>
 								</div>
 							</div>
@@ -108,6 +107,7 @@
 											<h2>Ajouter une race</h2>
                                             <div class="container">
                                                 <p>Veuillez remplir le formulaire, ainsi qu'importer la plus belle des photos</p>
+                                        </header>
                                                 <form method="post" action="#">
                                                     <div class="row gtr-uniform">
                                                         <div class="col-12"><input type="text" name="name" id="name" placeholder="Nom de la race" /></div>
